@@ -1,0 +1,482 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #ffffff !important;
+    /* coloca de color blanco las palabras para navegar entre las distintas páginas */
+}
+
+header {
+    margin: 0px 0px 80px 0px;
+    /*separa la navegación del resto de la página*/
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+h1 {
+    margin: 0px 0px 40px 0px;
+    /*Separa título del resto de información*/
+}
+
+/*Index*/
+.presentacion {
+    display: flex;
+    /* Activa flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin: 80px;
+    /* Elimina márgenes del body */
+}
+
+.perfil {
+    display: flex;
+    /* Pone los elementos uno al lado del otro */
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 20px;
+    /* Espacio entre la foto y el texto */
+}
+
+.foto {
+    width: 180px;
+    /* Tamaño de la foto */
+    height: 180px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+}
+
+.info h1 {
+    margin: 0;
+}
+
+.info p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.frase {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 2em;
+}
+
+#perfil {
+    font-size: 1.5rem;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 30px 0px 50px 0px;
+}
+
+.listado1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+
+.listado2 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.informacion {
+    font-size: 1.5rem;
+}
+
+/*Formacion*/
+
+#formacion {
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+.grilla {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.siglo21,
+.utn,
+.bachiller,
+.dalmacio,
+.sagrada {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* vertical */
+    align-items: center;
+    /* horizontal */
+    text-align: center;
+    /* para centrar líneas de texto */
+    background-color: rgba(180, 180, 180, 0.87);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/*Extra*/
+#extra {
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+.extra1 {
+    margin: 0px 0px 50px 0px;
+}
+
+/*Experiencia*/
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.trabajos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.repositornav {
+    display: inline-block;
+    background-color: #2624ad;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sistemasnav {
+    display: inline-block;
+    background-color: #2624ad;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.administracionnav {
+    display: inline-block;
+    background-color: #2624ad;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/*Marco para guardar dentro cada experiencia*/
+#repositor {
+    background-color: #f4e9e4;
+    /* Color de fondo*/
+    border: 2px solid #d2b9a3;
+    /* Borde del recuadro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    width: 70%;
+    /* Ancho del recuadro */
+    margin: 20px auto;
+}
+
+.info-unilever {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 300px;
+}
+
+.logo-unilever {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 180px;
+}
+
+#sistemas {
+    background-color: #f4e9e4;
+    border: 2px solid #d2b9a3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.info-sistemas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+}
+
+.logo-sistemas {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 350px;
+}
+
+#administracion {
+    background-color: #f4e9e4;
+    border: 2px solid #d2b9a3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.info-administracion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 110px;
+}
+
+.logo-mamanu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 300px;
+}
+
+/*Contacto*/
+.contacto1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #e8dede;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+/* Formulario*/
+#formularios {
+    width: 60%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.informacion input,
+.informacion textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ce7070;
+    border-radius: 5px;
+}
+
+.informacion textarea {
+    height: 100px;
+    resize: none;
+}
+
+.informacion button {
+    width: 100px;
+    margin-top: 10px;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#personal {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+}
+
+#personal p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/*Pie de página*/
+footer {
+    text-align: center;
+    /* centra el texto */
+    font-size: 0.9rem;
+    /* tamaño más chico */
+    color: #333;
+    /* color del texto */
+    padding: 20px 0;
+    /* espacio arriba y abajo */
+    margin-top: 40px;
+    /* separa del contenido */
+    bottom: 0;
+}
+
+@media (max-width: 991px) {
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contenedor-habilidades {
+        width: auto;
+    }
+
+    .grilla {
+        grid-template-columns: repeat(2, 250px);
+        /*únicamente traemos lo que queremos modificar*/
+        grid-template-rows: repeat(3, 165px);
+        height: auto;
+    }
+
+    .info-unilever {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-unilever {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-unilever {
+        width: 100%;
+    }
+
+    .info-sistemas {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-sistemas {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-sistemas {
+        width: 100%;
+    }
+
+    .info-administracion {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-administracion {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-administracion {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grilla {
+        grid-template-columns: repeat(2, 200px);
+        /*únicamente traemos lo que queremos modificar*/
+        grid-template-rows: repeat(3, 125px);
+        height: auto;
+    }
+
+    .logo-unilever {
+        width: 100px;
+    }
+
+    .logo-mamanu {
+        width: 150px;
+    }
+
+    #extra .extra1 .comingsoon {
+        width: 430px;
+    }
+
+    #extra .comingsoon {
+        width: 430px;
+    }
+
+    .contacto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #personal {
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacion input,
+    .informacion textarea {
+        padding: 0px;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+}
