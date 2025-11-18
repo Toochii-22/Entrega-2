@@ -70,6 +70,7 @@ h1 {
     font-size: 16px;
 }
 
+/*frase debajo de la foto y el nombre*/
 .frase {
     display: flex;
     justify-content: center;
@@ -81,6 +82,7 @@ h1 {
     font-size: 1.5rem;
 }
 
+/*habilidades blandas*/
 .contenedor-habilidades {
     display: flex;
     justify-content: space-between;
@@ -212,6 +214,7 @@ h1 {
     margin: 20px auto;
 }
 
+/*info unilever*/
 .info-unilever {
     display: flex;
     justify-content: flex-start;
@@ -226,6 +229,7 @@ h1 {
     width: 180px;
 }
 
+/*info Agencia*/
 #sistemas {
     background-color: #f4e9e4;
     border: 2px solid #d2b9a3;
@@ -249,6 +253,7 @@ h1 {
     width: 350px;
 }
 
+/*info Mamanu*/
 #administracion {
     background-color: #f4e9e4;
     border: 2px solid #d2b9a3;
@@ -352,16 +357,19 @@ footer {
     bottom: 0;
 }
 
-@media (max-width: 991px) {
+/*adptación para vista de Tablet*/
+@media (max-width: 768px) {
     main {
         padding-left: 30px;
         padding-right: 30px;
     }
 
+    /*Index*/
     .contenedor-habilidades {
         width: auto;
     }
 
+    /*Formación*/
     .grilla {
         grid-template-columns: repeat(2, 250px);
         /*únicamente traemos lo que queremos modificar*/
@@ -369,6 +377,7 @@ footer {
         height: auto;
     }
 
+    /*Experiencia*/
     .info-unilever {
         flex-direction: column;
         /*texto arriba, logo abajo*/
@@ -433,22 +442,65 @@ footer {
     }
 }
 
+/*Adaptación para móvil*/
 @media (max-width: 480px) {
+    main{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /*Index*/
+    .perfil {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem;
+    }
+
+    .perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    }
+
+    h1 {
+    text-align: center;
+    font-size: 2rem; 
+    }
+
+    .listado1, .listado2{
+        font-size: 1.2rem;
+    }
+
+    /*Formación*/
     .grilla {
-        grid-template-columns: repeat(2, 200px);
-        /*únicamente traemos lo que queremos modificar*/
+        grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(3, 125px);
+        font-size: small;
         height: auto;
+    }
+
+    #repositor{
+        width: 90%;
     }
 
     .logo-unilever {
         width: 100px;
     }
 
+    #sistemas{
+        width: 90%;
+    }
+
+    #administracion{
+        width: 90%;
+    }
+
     .logo-mamanu {
         width: 150px;
     }
 
+    /*Extra*/
     #extra .extra1 .comingsoon {
         width: 430px;
     }
@@ -457,6 +509,7 @@ footer {
         width: 430px;
     }
 
+    /*Contacto*/
     .contacto1 {
         flex-direction: column;
         justify-content: center;
