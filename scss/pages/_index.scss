@@ -1,0 +1,74 @@
+@use "sass:map";
+@use "../utilities/mapas" as mapa;
+@use "../utilities/mixin";
+
+.presentacion {
+    display: flex;
+    /* Activa flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin: 80px;
+    /* Elimina márgenes del body */
+}
+
+.perfil {
+    display: flex;
+    /* Pone los elementos uno al lado del otro */
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 20px;
+    /* Espacio entre la foto y el texto */
+}
+
+.foto {
+    width: 180px;
+    /* Tamaño de la foto */
+    height: 180px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+}
+
+.info h1 {
+    margin: 0;
+}
+
+.info p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/*frase debajo de la foto y el nombre*/
+.frase {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 2em;
+}
+
+#perfil {
+    font-size: 1.5rem;
+}
+
+/*habilidades blandas*/
+.contenedor-habilidades {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 30px 0px 50px 0px;
+}
+
+.listado1 {
+    @include mixin.listado(flex-start);
+}
+
+.listado2 {
+    @include mixin.listado(flex-end);
+}
+
+.informacion {
+    font-size: map.get(mapa.$rem, 3);
+}

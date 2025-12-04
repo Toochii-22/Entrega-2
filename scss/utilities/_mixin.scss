@@ -1,0 +1,19 @@
+@mixin listado($b){
+    display: flex;
+    justify-content: $b;
+    font-size: 1.5rem;
+}
+
+@mixin info-exp($d){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $d;
+}
+
+@mixin logo-exp($a){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: $a;
+}

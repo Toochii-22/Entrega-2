@@ -1,0 +1,93 @@
+@use "sass:map";
+@use "../utilities/mapas" as mapa;
+
+@media (max-width: 480px) {
+    main{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /*Index*/
+    .perfil {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: map.get(mapa.$rem, 2);
+    }
+
+    .perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    }
+
+    h1 {
+    text-align: center;
+    font-size: map.get(mapa.$rem, 4); 
+    }
+
+    .listado1, .listado2{
+        font-size: 1.2rem;
+    }
+
+    /*Formación*/
+    .grilla {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 125px);
+        font-size: small;
+        height: auto;
+    }
+
+    #repositor{
+        width: 90%;
+    }
+
+    .logo-unilever {
+        width: 100px;
+    }
+
+    #sistemas{
+        width: 90%;
+    }
+
+    #administracion{
+        width: 90%;
+    }
+
+    .logo-mamanu {
+        width: 150px;
+    }
+
+    /*Extra*/
+    #extra .extra1 .comingsoon {
+        width: 430px;
+    }
+
+    #extra .comingsoon {
+        width: 430px;
+    }
+
+    /*Contacto*/
+    .contacto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #personal {
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacion input,
+    .informacion textarea {
+        padding: 0px;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+}

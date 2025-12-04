@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /*Index*/
+    .contenedor-habilidades {
+        width: auto;
+    }
+
+    /*Formación*/
+    .grilla {
+        grid-template-columns: repeat(2, 250px);
+        /*únicamente traemos lo que queremos modificar*/
+        grid-template-rows: repeat(3, 165px);
+        height: auto;
+    }
+
+    /*Experiencia*/
+    .info-unilever {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-unilever {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-unilever {
+        width: 100%;
+    }
+
+    .info-sistemas {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-sistemas {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-sistemas {
+        width: 100%;
+    }
+
+    .info-administracion {
+        flex-direction: column;
+        /*texto arriba, logo abajo*/
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-administracion {
+        height: auto;
+        width: 150px;
+        /*ajusta el tamaño en tablet*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-administracion {
+        width: 100%;
+    }
+}

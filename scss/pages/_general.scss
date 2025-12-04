@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "../utilities/mapas" as mapa;
+
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #ffffff !important;
+    /* coloca de color blanco las palabras para navegar entre las distintas páginas */
+}
+
+header {
+    margin: 0px 0px 80px 0px;
+    /*separa la navegación del resto de la página*/
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+h1 {
+    margin: 0px 0px 40px 0px;
+    /*Separa título del resto de información*/
+}
+
+footer {
+    text-align: center;
+    /* centra el texto */
+    font-size: map.get(mapa.$rem, 2);
+    /* tamaño más chico */
+    color: #333;
+    /* color del texto */
+    padding: 20px 0;
+    /* espacio arriba y abajo */
+    margin-top: 40px;
+    /* separa del contenido */
+    bottom: 0;
+}

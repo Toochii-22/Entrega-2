@@ -1,0 +1,79 @@
+@use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.trabajos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.repositornav {
+    @extend %cuadro;
+    transition: transform .5s;
+    &:hover{
+    transform: variables.$animacion;
+    }
+}
+
+.sistemasnav {
+    @extend %cuadro;
+    transition: transform .5s;
+    &:hover{
+    transform: variables.$animacion;
+    }
+}
+
+.administracionnav {
+    @extend %cuadro;
+    transition: transform .5s;
+    &:hover{
+    transform: variables.$animacion;
+    }
+}
+
+/*Marco para guardar dentro cada experiencia*/
+#repositor {
+    @extend %cuadro-exp;
+}
+
+/*info unilever*/
+.info-unilever {
+    @include mixin.info-exp(300px);
+}
+
+.logo-unilever {
+    @include mixin.logo-exp(180px);
+}
+
+/*info Agencia*/
+#sistemas {
+    @extend %cuadro-exp;
+}
+
+.info-sistemas {
+    @include mixin.info-exp(150px);
+}
+
+.logo-sistemas {
+    @include mixin.logo-exp(350px);
+}
+
+/*info Mamanu*/
+#administracion {
+    @extend %cuadro-exp;
+}
+
+.info-administracion {
+    @include mixin.info-exp(110px);
+}
+
+.logo-mamanu {
+    @include mixin.logo-exp(300px);
+}
