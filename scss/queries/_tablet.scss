@@ -1,3 +1,6 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+
 @media (max-width: 768px) {
     main {
         padding-left: 30px;
@@ -11,73 +14,81 @@
 
     /*Formación*/
     .grilla {
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(2, 350px);
         /*únicamente traemos lo que queremos modificar*/
-        grid-template-rows: repeat(3, 165px);
+        grid-template-rows: repeat(3, 265px);
         height: auto;
+    }
+
+    /*ajuste logo Siglo 21*/
+    .siglo21 img {
+        width: 150px;
+        margin-bottom: variables.$esp-abajo;
+    }
+
+    /*ajuste logo UTN*/
+    .utn img {
+        width: 100px;
+        margin-bottom: variables.$esp-abajo;
+    }
+
+    /*ajuste logo Dalmacio*/
+    .dalmacio img {
+        width: 90px;
+        margin-bottom: variables.$esp-abajo;
+    }
+
+    .sagrada img {
+        width: 100px;
+        margin-bottom: variables.$esp-abajo;
     }
 
     /*Experiencia*/
-    .info-unilever {
-        flex-direction: column;
-        /*texto arriba, logo abajo*/
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+    #repositor {
+        .info-unilever {
+            @include mixin.info-exp-tablet(10px);
+        }
+
+        .logo-unilever {
+            @include mixin.logo-exp-tablet(150px);
+        }
+
+
+        .texto-unilever {
+            width: 100%;
+        }
     }
 
-    .logo-unilever {
-        height: auto;
-        width: 150px;
-        /*ajusta el tamaño en tablet*/
-        justify-content: center;
-        align-items: center;
+    #sistemas {
+        .info-sistemas {
+            @include mixin.info-exp-tablet(10px);
+        }
+
+        .logo-sistemas {
+            @include mixin.logo-exp-tablet(200px);
+        }
+
+        .texto-sistemas {
+            width: 100%;
+        }
     }
 
-    .texto-unilever {
-        width: 100%;
+    #administracion {
+        .info-administracion {
+            @include mixin.info-exp-tablet(10px);
+        }
+
+        .logo-administracion {
+            @include mixin.logo-exp-tablet(150px);
+        }
+
+        .texto-administracion {
+            width: 100%;
+        }
     }
 
-    .info-sistemas {
-        flex-direction: column;
-        /*texto arriba, logo abajo*/
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .logo-sistemas {
-        height: auto;
-        width: 150px;
-        /*ajusta el tamaño en tablet*/
-        justify-content: center;
-        align-items: center;
-    }
-
-    .texto-sistemas {
-        width: 100%;
-    }
-
-    .info-administracion {
-        flex-direction: column;
-        /*texto arriba, logo abajo*/
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .logo-administracion {
-        height: auto;
-        width: 150px;
-        /*ajusta el tamaño en tablet*/
-        justify-content: center;
-        align-items: center;
-    }
-
-    .texto-administracion {
-        width: 100%;
+    /*Extra*/
+    #extra ul {
+        margin-left: 0px;
     }
 }

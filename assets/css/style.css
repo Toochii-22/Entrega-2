@@ -14,7 +14,7 @@ header {
 }
 
 body {
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../../assets/img/fondo.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,8 +22,7 @@ body {
 
 main {
   font-family: "Open Sans", sans-serif;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 200px 0 200px;
 }
 
 h1 {
@@ -56,7 +55,7 @@ footer {
   /* Elimina márgenes del body */
 }
 
-.perfil {
+.presentacion .perfil {
   display: flex;
   /* Pone los elementos uno al lado del otro */
   align-items: center;
@@ -65,7 +64,7 @@ footer {
   /* Espacio entre la foto y el texto */
 }
 
-.foto {
+.presentacion .foto {
   width: 180px;
   /* Tamaño de la foto */
   height: 180px;
@@ -105,13 +104,13 @@ footer {
   margin: 30px 0px 50px 0px;
 }
 
-.listado1 {
+.contenedor-habilidades .listado1 {
   display: flex;
   justify-content: flex-start;
   font-size: 1.5rem;
 }
 
-.listado2 {
+.contenedor-habilidades .listado2 {
   display: flex;
   justify-content: flex-end;
   font-size: 1.5rem;
@@ -130,7 +129,7 @@ footer {
   display: grid;
   height: 50vh;
   grid-template-columns: repeat(3, 500px);
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 200px 200px;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -168,6 +167,28 @@ footer {
 .dalmacio:hover,
 .sagrada:hover {
   transform: scale(1.1);
+}
+
+/*ajuste logo Siglo 21*/
+.siglo21 img {
+  width: 200px;
+}
+
+/*ajuste logo Sagrada Familia*/
+.sagrada img {
+  width: 110px;
+}
+
+/*ajuste logo Coder*/
+.coder img {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  width: 150px;
+}
+
+/*ajusto logo Bachiller*/
+.bachiller img {
+  width: 200px;
 }
 
 .repositornav,
@@ -229,15 +250,18 @@ h1 {
 }
 
 /*Marco para guardar dentro cada experiencia*/
-/*info unilever*/
-.info-unilever {
+#repositor {
+  /*info unilever*/
+}
+
+#repositor .info-unilever {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 300px;
+  gap: 200px;
 }
 
-.logo-unilever {
+#repositor .logo-unilever {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -245,14 +269,14 @@ h1 {
 }
 
 /*info Agencia*/
-.info-sistemas {
+#sistemas .info-sistemas {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 150px;
 }
 
-.logo-sistemas {
+#sistemas .logo-sistemas {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -260,18 +284,25 @@ h1 {
 }
 
 /*info Mamanu*/
-.info-administracion {
+#administracion .info-administracion {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 110px;
 }
 
-.logo-mamanu {
+#administracion .logo-mamanu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 300px;
+}
+
+#extra {
+  margin: 0px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #extra h1 {
@@ -279,8 +310,19 @@ h1 {
   font-size: 2.5em;
 }
 
-.extra1 {
-  margin: 0px 0px 50px 0px;
+#extra h3 {
+  margin-top: 10px;
+}
+
+#extra .prox {
+  margin-top: 10px;
+}
+
+#extra ul {
+  align-self: flex-start;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 385px;
 }
 
 .contacto1 {
@@ -359,14 +401,37 @@ h1 {
 
   /*Formación*/
   .grilla {
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 350px);
     /*únicamente traemos lo que queremos modificar*/
-    grid-template-rows: repeat(3, 165px);
+    grid-template-rows: repeat(3, 265px);
     height: auto;
+  }
+
+  /*ajuste logo Siglo 21*/
+  .siglo21 img {
+    width: 150px;
+    margin-bottom: 30px;
+  }
+
+  /*ajuste logo UTN*/
+  .utn img {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  /*ajuste logo Dalmacio*/
+  .dalmacio img {
+    width: 90px;
+    margin-bottom: 30px;
+  }
+
+  .sagrada img {
+    width: 100px;
+    margin-bottom: 30px;
   }
 
   /*Experiencia*/
-  .info-unilever {
+  #repositor .info-unilever {
     flex-direction: column;
     /*texto arriba, logo abajo*/
     justify-content: center;
@@ -375,7 +440,7 @@ h1 {
     text-align: center;
   }
 
-  .logo-unilever {
+  #repositor .logo-unilever {
     height: auto;
     width: 150px;
     /*ajusta el tamaño en tablet*/
@@ -383,11 +448,11 @@ h1 {
     align-items: center;
   }
 
-  .texto-unilever {
+  #repositor .texto-unilever {
     width: 100%;
   }
 
-  .info-sistemas {
+  #sistemas .info-sistemas {
     flex-direction: column;
     /*texto arriba, logo abajo*/
     justify-content: center;
@@ -396,19 +461,19 @@ h1 {
     text-align: center;
   }
 
-  .logo-sistemas {
+  #sistemas .logo-sistemas {
     height: auto;
-    width: 150px;
+    width: 200px;
     /*ajusta el tamaño en tablet*/
     justify-content: center;
     align-items: center;
   }
 
-  .texto-sistemas {
+  #sistemas .texto-sistemas {
     width: 100%;
   }
 
-  .info-administracion {
+  #administracion .info-administracion {
     flex-direction: column;
     /*texto arriba, logo abajo*/
     justify-content: center;
@@ -417,7 +482,7 @@ h1 {
     text-align: center;
   }
 
-  .logo-administracion {
+  #administracion .logo-administracion {
     height: auto;
     width: 150px;
     /*ajusta el tamaño en tablet*/
@@ -425,15 +490,20 @@ h1 {
     align-items: center;
   }
 
-  .texto-administracion {
+  #administracion .texto-administracion {
     width: 100%;
+  }
+
+  /*Extra*/
+  #extra ul {
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 480px) {
   main {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   /*Index*/
@@ -462,10 +532,41 @@ h1 {
 
   /*Formación*/
   .grilla {
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(3, 125px);
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
     font-size: small;
     height: auto;
+  }
+
+  /*ajuste logo coder*/
+  .coder img {
+    width: 150px;
+  }
+
+  /*ajuste logo siglo*/
+  .siglo21 img {
+    width: 130px;
+  }
+
+  /*ajuste logo UTN*/
+  .utn img {
+    width: 80px;
+  }
+
+  /*ajuste logo bachiller*/
+  .bachiller img {
+    width: 180px;
+  }
+
+  /*ajuste logo dalmacio*/
+  .dalmacio img {
+    width: 80px;
+  }
+
+  /*ajuste logo sagrada*/
+  .sagrada img {
+    width: 90px;
+    margin-top: 10px;
   }
 
   #repositor {
@@ -489,11 +590,11 @@ h1 {
   }
 
   /*Extra*/
-  #extra .extra1 .comingsoon {
+  #extra .extra1 .prox {
     width: 430px;
   }
 
-  #extra .comingsoon {
+  #extra .prox {
     width: 430px;
   }
 

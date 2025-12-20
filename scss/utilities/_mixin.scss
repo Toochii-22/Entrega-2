@@ -1,19 +1,36 @@
-@mixin listado($b){
+@mixin listado($b) {
     display: flex;
     justify-content: $b;
     font-size: 1.5rem;
 }
 
-@mixin info-exp($d){
+@mixin info-exp($d) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: $d;
 }
 
-@mixin logo-exp($a){
+@mixin logo-exp($a) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: $a;
+}
+
+@mixin info-exp-tablet($f) {
+    flex-direction: column;
+    /*texto arriba, logo abajo*/
+    justify-content: center;
+    align-items: center;
+    gap: $f;
+    text-align: center;
+}
+
+@mixin logo-exp-tablet($g) {
+    height: auto;
+    width: $g;
+    /*ajusta el tamaño en tablet*/
+    justify-content: center;
+    align-items: center;
 }

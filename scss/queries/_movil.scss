@@ -2,43 +2,75 @@
 @use "../utilities/mapas" as mapa;
 
 @media (max-width: 480px) {
-    main{
-        padding-right: 0px;
-        padding-left: 0px;
+    main {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     /*Index*/
     .perfil {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: map.get(mapa.$rem, 2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: map.get(mapa.$rem, 2);
     }
 
     .perfil img {
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
     }
 
     h1 {
-    text-align: center;
-    font-size: map.get(mapa.$rem, 4); 
+        text-align: center;
+        font-size: map.get(mapa.$rem, 4);
     }
 
-    .listado1, .listado2{
+    .listado1,
+    .listado2 {
         font-size: 1.2rem;
     }
 
     /*Formación*/
     .grilla {
-        grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(3, 125px);
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(3, 200px);
         font-size: small;
         height: auto;
     }
 
-    #repositor{
+    /*ajuste logo coder*/
+    .coder img {
+        width: 150px;
+    }
+
+    /*ajuste logo siglo*/
+    .siglo21 img {
+        width: 130px;
+    }
+
+    /*ajuste logo UTN*/
+    .utn img {
+        width: 80px;
+    }
+
+    /*ajuste logo bachiller*/
+    .bachiller img {
+        width: 180px;
+    }
+
+    /*ajuste logo dalmacio*/
+    .dalmacio img {
+        width: 80px;
+    }
+
+    /*ajuste logo sagrada*/
+    .sagrada img {
+        width: 90px;
+        margin-top: 10px;
+    }
+
+    #repositor {
         width: 90%;
     }
 
@@ -46,11 +78,11 @@
         width: 100px;
     }
 
-    #sistemas{
+    #sistemas {
         width: 90%;
     }
 
-    #administracion{
+    #administracion {
         width: 90%;
     }
 
@@ -59,11 +91,11 @@
     }
 
     /*Extra*/
-    #extra .extra1 .comingsoon {
+    #extra .extra1 .prox {
         width: 430px;
     }
 
-    #extra .comingsoon {
+    #extra .prox {
         width: 430px;
     }
 

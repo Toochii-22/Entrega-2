@@ -11,7 +11,7 @@
     display: grid;
     height: 50vh;
     grid-template-columns: repeat(3, 500px);
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 200px 200px;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -40,7 +40,30 @@
     text-decoration: none;
     border-radius: 4px;
     transition: transform .5s;
-    &:hover{
-    transform: variables.$animacion;
+
+    &:hover {
+        transform: variables.$animacion;
     }
+}
+
+/*ajuste logo Siglo 21*/
+.siglo21 img {
+    width: 200px;
+}
+
+/*ajuste logo Sagrada Familia*/
+.sagrada img {
+    width: 110px;
+}
+
+/*ajuste logo Coder*/
+.coder img {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    width: 150px;
+}
+
+/*ajusto logo Bachiller*/
+.bachiller img {
+    width: 200px;
 }

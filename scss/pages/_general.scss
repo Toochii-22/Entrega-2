@@ -16,7 +16,7 @@ header {
 }
 
 body {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../../assets/img/fondo.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,8 +24,7 @@ body {
 
 main {
     font-family: "Open Sans", sans-serif;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 200px 0 200px;
 }
 
 h1 {
